@@ -41,7 +41,8 @@ PRODUCT_PACKAGES += \
     OPlusFrameworksResTarget \
     OPlusSettingsProviderResTarget \
     OPlusSettingsResTarget \
-    OPlusSystemUIResTarget
+    OPlusSystemUIResTarget \
+    PixelLauncherResTarget
 
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 28
