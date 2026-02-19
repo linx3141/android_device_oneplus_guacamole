@@ -44,6 +44,10 @@ PRODUCT_PACKAGES += \
     OPlusSystemUIResTarget \
     PixelLauncherResTarget
 
+# Retrofit Dynamic Partition
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := true
+
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 28
 
