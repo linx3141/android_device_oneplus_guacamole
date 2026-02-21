@@ -55,3 +55,6 @@ $(call inherit-product, device/oneplus/sm8150-common/common.mk)
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/oneplus/guacamole/guacamole-vendor.mk)
+
+# Inherit from the ViPER4AndroidFX makefile.
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)

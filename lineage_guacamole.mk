@@ -15,6 +15,47 @@ $(call inherit-product, device/oneplus/guacamole/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Axion Things
+TARGET_ENABLE_BLUR := true
+TARGET_INCLUDE_VIPERFX := true
+
+# Camera
+AXION_CAMERA_REAR_INFO := 48,8,16
+AXION_CAMERA_FRONT_INFO := 16
+
+# Maintainer
+AXION_MAINTAINER := Linx3141
+
+# Processor
+AXION_PROCESSOR := Snapdragon_855
+
+# Charging
+BYPASS_CHARGE_SUPPORTED ?= false
+
+# GPU governor support
+PERF_GOV_SUPPORTED := true
+PERF_DEFAULT_GOV := schedutil
+PERF_ANIM_OVERRIDE := true
+
+# GPU
+GPU_FREQS_PATH := /sys/class/kgsl/kgsl-3d0/devfreq/available_frequencies
+GPU_MIN_FREQ_PATH := /sys/class/kgsl/kgsl-3d0/devfreq/min_freq
+
+# High Brightness Mode
+HBM_SUPPORTED := false
+
+# Flashlight strength
+TORCH_STR_SUPPORTED := false
+
+# Low ram device
+TARGET_IS_LOW_RAM ?= false
+
+# Refresh rate list
+TARGET_SUPPORTED_REFRESH_RATES := 60,90
+
+# Prebuilt LineageOS Apps
+TARGET_INCLUDES_LOS_PREBUILTS := false
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_guacamole
 PRODUCT_DEVICE := guacamole
